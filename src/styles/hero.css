@@ -108,8 +108,9 @@
 }
 @media screen and (max-width: 420px) {
   .hero--image img {
-    width: 35vmax;
-    height: 35vmax;
+    margin-top: 4rem;
+    width: 40vmax;
+    height: 40vmax;
     transition: width 0.5s, height 0.5s;
   }
 }
