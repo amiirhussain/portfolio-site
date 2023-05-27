@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Raleway:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  scroll-behavior: smooth;
+}
+
+.section--header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.section--heading {
+  font-family: "Dosis";
+  font-size: 4rem;
+  letter-spacing: 3px;
+  color: #be3f26;
+  margin-bottom: 10px;
+}
+.section--slogan {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  /* font-family: "Dosis"; */
+  color: #7a8278;
+}
+/* CSS */
+.swatch_1 {
+  background: #f2f4f5;
+}
+.swatch_2 {
+  background: #c5cdb7;
+}
+.swatch_3 {
+  background: #adafae;
+}
+.swatch_4 {
+  background: #19110b;
+}
+.swatch_5 {
+  background: #593a2a;
+}
+.swatch_6 {
+  background: #be3f26;
+}
+.swatch_7 {
+  background: #7a8278;
+}
+.swatch_8 {
+  background: #c39a5c;
+}

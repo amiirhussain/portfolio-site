@@ -1,0 +1,125 @@
+#projects {
+  height: 700px;
+  padding: 6rem 12%;
+}
+#projects section {
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(232, 233, 233);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#projects article {
+  width: 80%;
+}
+
+#projects .workItem {
+  height: 500px;
+  width: 95%;
+  margin: auto;
+  background-color: #fff;
+  display: flex;
+  padding: 2rem;
+  border-radius: 10px;
+  /* box-shadow: 0 0 20px 5px #fef2f2; */
+}
+#projects img {
+  border-radius: 20px;
+  width: 40%;
+  object-fit: cover;
+}
+
+#projects aside {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projects h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Dosis";
+}
+#projects p {
+  letter-spacing: 3px;
+  line-height: 180%;
+  margin: 2rem;
+}
+#projects a {
+  background-color: #be3f26;
+  padding: 0.7rem 2rem;
+  margin: 2rem;
+  color: #fff;
+  transition: all 0.5s;
+}
+#projects a:hover {
+  background-color: #ad4126;
+}
+
+@media screen and (max-width: 880px) {
+  #projects {
+    height: 800px;
+    padding: 5rem 5%;
+    transition: all 0.5s;
+  }
+  #projects article {
+    width: 95%;
+    transition: all 0.5s;
+  }
+
+  #projects .workItem {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  #projects img {
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+  }
+  #projects article {
+    width: 100%;
+  }
+  #projects h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  #projects p {
+    letter-spacing: 2px;
+    line-height: 120%;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #projects {
+    height: 500px;
+    padding: 5rem 3%;
+    transition: all 0.5s;
+  }
+  #projects .workItem {
+    padding: 0.7rem;
+    width: 95%;
+  }
+
+  #projects img {
+    height: 200px;
+  }
+  #projects h3 {
+    font-size: 1.3rem;
+  }
+  #projects p {
+    font-size: 12px;
+    text-align: center;
+  }
+  #projects a {
+    margin: 0.2rem;
+  }
+}
