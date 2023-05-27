@@ -1,10 +1,10 @@
 {
   "projects": [
     {
-      "date": "07/10/2022",
-      "title": "TECHY STAR",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-      "url": "/",
+      "date": "27/05/2023",
+      "title": "Meme Generator",
+      "description": "It's a React-based web application that allows users to create personalized memes by adding text to random images. With an intuitive interface and API integration, users can generate unique and humorous memes with just a few clicks. ",
+      "url": "https://amiirhussain.github.io/meme-generator",
       "imgSrc": "https://cdn.pixabay.com/photo/2018/06/07/16/49/virtual-3460451_960_720.jpg"
     },
 
