@@ -3,7 +3,7 @@ import "../styles/projects.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import data from "../assets/data.json";
+import data from "../assets/data";
 
 const Projects = () => {
   return (
@@ -24,15 +24,24 @@ const Projects = () => {
             infiniteLoop={true}
             autoPlay={true}
           >
-            {data.projects.map((i) => (
+            {data.map((i) => (
               <div key={i.title} className="workItem">
                 <img src={i.imgSrc} alt="" />
                 <aside>
                   <h3 className="project--title">{i.title}</h3>
                   <p className="project--description">{i.description}</p>
-                  <a className="project--btn" href={i.url} target={"blank"}>
-                    View Demo
-                  </a>
+                  <div className="buttons">
+                    <a
+                      className="project--btn black"
+                      href={i.githubUrl}
+                      target={"blank"}
+                    >
+                      Github
+                    </a>
+                    <a className="project--btn" href={i.url} target={"blank"}>
+                      View Demo
+                    </a>
+                  </div>
                 </aside>
               </div>
             ))}

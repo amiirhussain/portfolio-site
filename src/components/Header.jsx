@@ -1,16 +1,21 @@
 import React, { useState } from "react";
-import { RiMenu3Fill } from "react-icons/ri";
+import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
 import "../styles/header.css";
 
 const Header = ({ menuOpen, setMenuOpen }) => {
-  // console.log("setMenuOpen prop:", setMenuOpen);
+  const menuIcon = menuOpen ? (
+    <RiCloseFill className="close-menu" />
+  ) : (
+    <RiMenu3Fill />
+  );
+
   return (
     <>
       <header>
         <Navbar setMenuOpen={setMenuOpen} />
       </header>
       <button onClick={() => setMenuOpen(!menuOpen)} className="burger--menu">
-        <RiMenu3Fill />
+        {menuIcon}
       </button>
     </>
   );

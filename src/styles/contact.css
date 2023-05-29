@@ -1,5 +1,5 @@
 #contact {
-  padding: 3rem 12%;
+  padding: 5rem 12%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,9 +13,8 @@
 .contact-form {
   flex: 1;
   padding: 2rem;
-  background-color: #f1f1f1;
+  background-color: rgb(246, 246, 246);
   border-radius: 8px;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .contact-form h2 {
@@ -45,7 +44,7 @@
 
 .contact-form input,
 .contact-form textarea {
-  width: 92%;
+  width: 95%;
   padding: 10px;
   margin-bottom: 16px;
   border: 1px solid #ccc;

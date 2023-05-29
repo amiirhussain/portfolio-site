@@ -18,7 +18,6 @@ nav h1 {
 }
 nav h1 span {
   color: #be3f26;
-  /* font-weight: 700; */
 }
 .nav--list {
   display: flex;
@@ -59,14 +58,12 @@ a {
 }
 @media screen and (max-width: 1300px) {
   header {
-    /* height: 50vh; */
     padding: 0 5%;
     transition: 0.3s ease-in;
   }
 }
 @media screen and (max-width: 780px) {
   header {
-    /* height: 50vh; */
     padding: 0 3%;
     transition: 0.3s ease-in;
   }
@@ -125,4 +122,8 @@ a {
 
 .res--menu--appear {
   transform: translateX(0);
+}
+
+.close-menu {
+  color: #fff;
 }

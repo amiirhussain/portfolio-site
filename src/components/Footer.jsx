@@ -30,7 +30,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="footer-text">
-          &copy; 2023 Your Company. All rights reserved.
+          &copy; 2023 Amir Hussain. All rights reserved.
         </p>
       </div>
     </footer>

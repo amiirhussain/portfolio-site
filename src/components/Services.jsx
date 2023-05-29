@@ -1,6 +1,4 @@
 import React from "react";
-// import { motion } from "framer-motion";
-// import { AiFillIeCircle, AiFillAndroid, AiFillWindows } from "react-icons/ai";
 import { FaDesktop, FaMobile, FaCog } from "react-icons/fa";
 
 import "../styles/services.css";
@@ -20,8 +18,8 @@ const Services = () => {
             icon={<FaDesktop />}
           />
           <ServiceBox
-            title="Mobile App Development"
-            description="We build native and cross-platform mobile applications."
+            title="Creative Design"
+            description="We build interactive and creative web design."
             icon={<FaMobile />}
           />
           <ServiceBox
