@@ -15,8 +15,12 @@ const Hero = () => {
         x: 0,
         opacity: 1,
       },
+      transition: {
+        duration: 1,
+      },
     },
   };
+
   return (
     <div id="hero">
       <section className="hero--section">
@@ -34,7 +38,13 @@ const Hero = () => {
           />
         </div>
         <div className="hero--image">
-          <img src={me} alt="" />
+          <motion.img
+            initial={{ y: "-100%", opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 2 }}
+            src={me}
+            alt=""
+          />
         </div>
       </section>
     </div>

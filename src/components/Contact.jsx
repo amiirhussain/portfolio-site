@@ -4,6 +4,8 @@ import { toast } from "react-hot-toast";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../firebase";
 
+import { motion } from "framer-motion";
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -33,10 +35,15 @@ const Contact = () => {
 
   return (
     <div id="contact">
-      <div className="section--header">
+      <motion.div
+        className="section--header"
+        initial={{ x: "-100%", opacity: 0 }}
+        whileInView={{ x: 10, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 120 }}
+      >
         <h1 className="section--heading">Contact Us</h1>
         <span className="section--slogan">let's get in touch</span>
-      </div>
+      </motion.div>
 
       <div className="contact-form">
         <form onSubmit={handleSubmit}>

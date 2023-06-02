@@ -1,15 +1,20 @@
 import React from "react";
 import { FaDesktop, FaMobile, FaCog } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 import "../styles/services.css";
 
 const Services = () => {
   return (
     <div id="services">
-      <div className="section--header">
+      <motion.div
+        className="section--header"
+        initial={{ x: "-100%", opacity: 0 }}
+        whileInView={{ x: 10, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 120 }}
+      >
         <h1 className="section--heading">Services</h1>
         <span className="section--slogan">What I will do for you</span>
-      </div>
+      </motion.div>
       <section>
         <div className="service-container">
           <ServiceBox

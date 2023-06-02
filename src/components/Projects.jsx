@@ -2,16 +2,22 @@ import React from "react";
 import "../styles/projects.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { motion } from "framer-motion";
 
 import data from "../assets/data";
 
 const Projects = () => {
   return (
     <div id="projects">
-      <div className="section--header">
+      <motion.div
+        className="section--header"
+        initial={{ x: "-100%", opacity: 0 }}
+        whileInView={{ x: 10, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 120 }}
+      >
         <h1 className="section--heading">Projects</h1>
         <span className="section--slogan">Some of my recent work</span>
-      </div>
+      </motion.div>
 
       <section>
         <article>
